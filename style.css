@@ -1,0 +1,265 @@
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background: linear-gradient(to bottom, #111, #000);
+  color: #eee;
+}
+
+h1, h2, h3, h4 {
+  margin: 0 0 10px;
+  font-weight: bold;
+}
+
+p {
+  margin: 0 0 15px;
+  line-height: 1.6;
+}
+
+a {
+  color: #eee;
+  text-decoration: none;
+}
+a:hover {
+  text-decoration: underline;
+}
+
+
+.header {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.logo-block {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.logo {
+  width: 50px;
+  height: 50px;
+  background: linear-gradient(to bottom right, #900, #600);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-weight: bold;
+  border-radius: 10px;
+}
+
+.subtitle {
+  font-size: 12px;
+  color: #aaa;
+}
+
+.nav {
+  display: flex;
+  gap: 20px;
+  font-size: 14px;
+}
+
+/* Кнопки */
+.btn {
+  background: #900;
+  padding: 10px 20px;
+  border-radius: 8px;
+  color: white;
+  font-weight: bold;
+  transition: background 0.2s;
+}
+.btn:hover {
+  background: #c00;
+}
+
+.btn-outline {
+  border: 1px solid #666;
+  padding: 10px 20px;
+  border-radius: 8px;
+}
+
+
+.hero {
+  max-width: 1200px;
+  margin: 40px auto;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 20px;
+  align-items: center;
+}
+
+.hero-text h2 {
+  font-size: 36px;
+}
+
+.hero-img {
+  position: relative;
+}
+.hero-img img {
+  width: 100%;
+  border-radius: 15px;
+  box-shadow: 0 0 20px rgba(0,0,0,0.7);
+}
+.img-caption {
+  position: absolute;
+  left: 20px;
+  bottom: 20px;
+  background: rgba(0,0,0,0.6);
+  padding: 8px 12px;
+  border-radius: 6px;
+  font-size: 14px;
+}
+
+.note {
+  font-size: 12px;
+  color: #888;
+}
+
+
+.about {
+  max-width: 900px;
+  margin: 40px auto;
+  padding: 0 20px;
+}
+
+
+.features {
+  max-width: 1200px;
+  margin: 40px auto;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 20px;
+  padding: 0 20px;
+}
+.features article {
+  background: rgba(255,255,255,0.05);
+  border: 1px solid rgba(255,255,255,0.1);
+  border-radius: 10px;
+  padding: 20px;
+  transition: transform 0.2s;
+}
+.features article:hover {
+  transform: translateY(-5px);
+}
+
+/* Characters */
+.characters {
+  max-width: 1200px;
+  margin: 40px auto;
+  padding: 0 20px;
+}
+.characters .grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 20px;
+}
+.characters .card {
+  background: rgba(255,255,255,0.05);
+  border: 1px solid rgba(255,255,255,0.1);
+  border-radius: 10px;
+  padding: 20px;
+}
+.img-placeholder {
+  background: #222;
+  color: #666;
+  height: 180px;
+  width: 260px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 8px;
+  margin-bottom: 10px;
+  margin: auto;
+  display: block;
+  
+}
+
+.img-placeholder img {
+  width: 255px;
+  height: 175px;
+}
+  
+
+.img-placeholder1 {
+  background: #222;
+  color: #666;
+  height: 180px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 8px;
+  margin-bottom: 10px;
+  background-image: url();
+}
+
+.img-placeholder1 img {
+  width: 265px;
+  height: 175px;
+}
+
+.img-placeholder2 {
+  background: #222;
+  color: #666;
+  height: 180px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 8px;
+  margin-bottom: 10px;
+  background-image: url();
+}
+
+.img-placeholder2 img {
+  width: 2000px;
+  height: 175px;
+}
+
+
+.gallery {
+  max-width: 1200px;
+  margin: 40px auto;
+  padding: 0 20px;
+}
+.gallery .grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 15px;
+}
+.gallery img {
+  width: 100%;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0,0,0,0.6);
+}
+
+
+.download {
+  max-width: 1200px;
+  margin: 40px auto;
+  padding: 0 20px;
+}
+.download-box {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  background: rgba(255,255,255,0.05);
+  border: 1px solid rgba(255,255,255,0.1);
+  border-radius: 15px;
+  padding: 20px;
+  align-items: center;
+  justify-content: space-between;
+}
+
+
+.footer {
+  border-top: 1px solid rgba(255,255,255,0.1);
+  padding: 20px;
+  max-width: 1200px;
+  margin: 40px auto 0;
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  font-size: 14px;
+  color: #888;
+}
